@@ -1,0 +1,11 @@
+<p>color works!</p>
+<div>
+  <label>Chon màu:</label>
+
+  <input [value]="background" type="color" (change)="onChane($event.target.value)">
+
+</div>
+<p>Output:</p>
+
+
+<div class="color-preview" [style.background]="background"></div>
